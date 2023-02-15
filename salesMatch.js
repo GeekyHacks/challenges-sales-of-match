@@ -1,5 +1,5 @@
 function sockMerchant(n, ar) {
-  // Write your code here
+  // this is the right solution
   const sortedAr = ar.sort();
   console.log(sortedAr);
   let single=0
