@@ -1,27 +1,21 @@
 function sockMerchant(n, ar) {
   // Write your code here
-  let pairarr = [];
-  let outputarr = [];
+  const sortedAr = ar.sort();
+  console.log(sortedAr);
+  let single=0
+  let pair =0;
+  let pairCounter = 0;
 
-  for (let i = 0; i <= ar.length; i++) {
-    if (ar[i] > 0) {
-      pairarr.push(ar[i]);
+ for(let i=0;i<ar.length;i++){
+single =sortedAr[i];
+   pair=sortedAr[i+1];
+   if(single===pair){
+     pairCounter++;
+     i++;
+   }
+ }
+return pairCounter;
+} 
 
-      for (let j = 1; j < ar.length; j++) {
-        let pn = pairarr.length;
-        if (pairarr[i] === ar[j]) {
-          pairarr.push(ar[j]);
-
-          if (pn === 2) {
-            pairarr.push(ar[(i, j)]);
-          }
-          outputarr.push(pairarr);
-        }
-      }
-    }
-
-    return outputarr.length;
-  }
-}
-let result = sockMerchant(9, [10, 10, 20, 20, 10, 10, 30, 50, 10, 20, 20]);
+let result = sockMerchant(12, [10, 10, 20, 20, 10, 10, 30, 50, 10, 20, 20,10]);
 console.log(result);
