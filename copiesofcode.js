@@ -27,3 +27,6 @@ function sockMerchant(n, ar) {
 }
 let result = sockMerchant(9, [10, 10, 20, 20, 10, 10, 30, 50, 10, 20, 20]);
 console.log(result);
+
+
+// this includes some other ways of solving the problem
