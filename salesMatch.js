@@ -19,3 +19,7 @@ return pairCounter;
 
 let result = sockMerchant(12, [10, 10, 20, 20, 10, 10, 30, 50, 10, 20, 20,10]);
 console.log(result);
+
+/*
+we need a sorted array to avoid making another loop to go through the original array to find the right match
+*/
